@@ -1,0 +1,28 @@
+<div class="container" style="max-width: 500px; margin: auto;">
+
+    <form #f="ngForm" autocomplete="on">
+        <div class="p-grid p-fluid">
+            <div class="p-col-12">
+                <h1>Login</h1>
+            </div>
+            <div class="p-field p-col-12">
+                <span class="p-float-label">
+                    <input pInputText type="email" name="email" required ngModel #usuario autofocus>
+                    <label>E-mail</label>
+                </span>
+            </div>
+            <div class="p-col-12">
+                <span class="p-float-label">
+                    <input pInputText type="password" name="senha" required ngModel #senha>
+                    <label>Senha</label>
+                </span>
+            </div>
+            <div class="p-col-12">
+                <button pButton type="submit" label="Login" [disabled]="!f.valid"
+                    (click)="login(usuario.value, senha.value); senha.value=''; senha.focus()">
+                </button>
+            </div>
+        </div>
+    </form>
+
+</div>

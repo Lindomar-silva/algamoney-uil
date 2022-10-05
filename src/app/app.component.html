@@ -1,0 +1,19 @@
+<!-- Barra de navegação -->
+<app-navbar *ngIf="exibeNavbar()"></app-navbar>
+
+<!-- Rendereiza os componentes acessados pelas rotas -->
+<!-- https://angular.io/api/router/RouterOutlet -->
+<router-outlet></router-outlet>
+
+<!-- Exibe mensagens em uma sobreposição -->
+<!-- https://primefaces.org/primeng/showcase/#/toast -->
+<p-toast position="bottom-right"></p-toast>
+
+<!-- Exibe menssagems de confirmação -->
+<!-- https://primefaces.org/primeng/showcase/#/confirmdialog -->
+<p-confirmDialog [transitionOptions]="'150ms'" header="Confirmação" icon="pi pi-question-circle" #confirmacao>
+    <p-footer>
+        <button type="button" pButton icon="pi pi-check" label="Sim" (click)="confirmacao.accept()"></button>
+        <button type="button" pButton icon="pi pi-times" label="Não" (click)="confirmacao.reject()"></button>
+    </p-footer>
+</p-confirmDialog>

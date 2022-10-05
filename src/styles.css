@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #404c51;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+a.p-button:hover, a.p-button:focus {
+    text-decoration: none;
+}
+
+.cadastro-acoes a {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    display: inline-block;
+    /* background-color: lawngreen; */
+}
+
+.cadastro-acoes .p-button {
+    margin-right: 5px;
+}
+
+/* form .p-button {
+    margin-right: .25em;
+} */
+
+label {
+    font-weight: bold;
+}
+
+.display-block {
+    display: block;
+}
+
+.wid-95 {
+    width: 95px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+    }
+}
+
+.col-valor-header {
+    width: 120px;
+    text-align: right !important;
+}
+
+.col-valor-content {
+    text-align: right !important;
+}
+
+.col-data-header {
+    width: 120px;
+}
+
+.col-data-content {
+    text-align: center;
+}
+
+.col-acoes {
+    width: 80px !important;
+    text-align: center !important;
+}
+
+.col-acoes .p-button {
+    margin: 2px;
+    padding: 3px !important;
+    width: auto !important;
+}
+
+.p-datatable .p-datatable-thead>tr>th {
+    padding: 4px 6px !important;
+}
+
+.p-datatable .p-datatable-tbody>tr>td {
+    /* border-width: 1px !important; */
+    padding: 2px 6px !important;
+}
+
+.p-datatable .p-datatable-tbody>tr:hover {
+    background-color: #E6E6E6;
+}
+
+.no-decoration {
+    color: #404c51;
+    text-decoration: none;
+}
+
+.no-decoration:hover, .no-decoration:focus {
+    color: royalblue;
+    text-decoration: underline;
+}
+
+/* Label flutuante (Primeng) */
+.p-float-label input:focus~label, .p-float-label input.p-filled~label {
+    left: 0;
+    top: -10px !important;
+    font-size: 16px !important;
+    color: #404c51;
+}
+
+.label-spaced {
+    margin: 5px;
+}
+
+.relat-spaced .p-calendar ,.relat-spaced label {
+    margin-right: 5px;
+}
